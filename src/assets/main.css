@@ -17,6 +17,40 @@ body {
 }
 
 @media (max-width: 480px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding: 15px 35px;
+    background-color: #222222;
+  }
+
+  nav h2 {
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  nav button {
+    color: #fff;
+  }
+
+  .sendInfo {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+  }
+
+  .sendInfo button {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease-in;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+  }
+
   main {
     display: flex;
     flex-direction: column;
@@ -71,6 +105,13 @@ body {
     border-radius: 2.5px;
     border: none;
   }
+
+  .intro-section button i {
+    margin: 0 5px;
+  }
+
+  /* SEARCH VIEW */
+
   .searchView {
     display: flex;
     justify-content: center;
@@ -78,13 +119,13 @@ body {
     height: 90vh;
   }
 
-  .infoView h1 {
+  .searchContent h1 {
       font-size: 24px;
       color: #027EE7;
       text-align: center;
   }
 
-  .infoView input {
+  .searchContent input {
   width: 20rem;
   padding: 3.5px 10px;
   margin: 1.5rem 0;
@@ -96,46 +137,86 @@ body {
   border: none
   }
 
-  .infoView input::placeholder {
-      color: #030303;
+  .searchContent input::placeholder {
+    color: #030303;
   }
 
-  .infoView button {
-      padding: 3.5px 5px;
-      border-radius: 2.5px;
-      background: #BFBFBF;
-      margin: 0 10px;
-      border: none
+  .searchContent button {
+    padding: 3.5px 5px;
+    border-radius: 2.5px;
+    background: #BFBFBF;
+    margin: 0 10px;
+    border: none
   }
 
-  .infoView button i {
-      font-size: 12px;
+  .searchContent button i {
+    font-size: 12px;
   }
 
-  .commonCountry {
-      display: flex;
-      place-items: center;
+  .container {
+    display: flex;
+    flex-direction: column;
   }
 
-  .commonCountry p {
-      font-size: 12px;
-      font-weight: 600;
+  .mainInfo {
+    width: 85%;
+    height: auto;
+    background: #303030;
+    border-radius: 5px;
+    margin: 2rem auto;
+    padding: 20px;
   }
 
-  .commonCountry .allBoxes {
-      display: flex;
-      justify-content: space-between;
+  .mainInfo h1 {
+    margin: .5rem 0 1.5rem 0;
   }
 
-  .commonCountry .allBoxes .box button {
-      padding: 5px 15px;
-      border-radius: 2.5px;
-      cursor: pointer;
-      border: none;
-      background: #444444;
-      color: #D9D9D9;
-      font-weight: 600;
-      transition: .3s ease-in;
-      font-size: 12px;
+  .mainInfo p {
+    margin: 5px 0;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  .mainInfo p span {
+    margin: 0 10px;
+    font-weight: 500;
+    color: #D9D9D9;
+  }
+
+  .box {
+    margin: 2rem 0;
+  }
+
+  .box .displayFlag {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    height: 50vh;
+    padding: 20px 0;
+    width: 85%;
+    margin: auto;
+    border-radius: 5px;
+    background: #303030;
+  }
+
+  .box .displayFlag img {
+    width: 75%;
+    max-height: 75%;
+    border-radius: 5px;
+  }
+
+  .backControl {
+    display: flex;
+    justify-content: end;
+    width: 85%;
+    margin: auto;
+  }
+
+  .backControl button {
+    padding: 0.3rem 5rem;
+    background: #0663b1;
+    border: none;
+    border-radius: 2.5px;
+    margin: 2rem 0;
   }
 }
