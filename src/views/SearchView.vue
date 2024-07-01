@@ -49,76 +49,7 @@ export default {
 
 
 <style scoped>
-    @media (max-width: 480px) {
-        .searchView {
-            display: flex;
-            justify-content: center;
-            place-items: center;
-            height: 90vh;
-        }
-
-        .infoView h1 {
-            font-size: 24px;
-            color: #027EE7;
-            text-align: center;
-        }
-
-        .infoView input {
-        width: 20rem;
-        padding: 3.5px 10px;
-        margin: 1.5rem 0;
-        font-weight: 600;
-        border-radius: 2.5px;
-        background: #BFBFBF;
-        outline: none;
-        font-size: 12px;
-        border: none
-        }
-
-        .infoView input::placeholder {
-            color: #030303;
-        }
-
-        .infoView button {
-            padding: 3.5px 5px;
-            border-radius: 2.5px;
-            background: #BFBFBF;
-            margin: 0 10px;
-            border: none
-        }
-
-        .infoView button i {
-            font-size: 12px;
-        }
-
-        .commonCountry {
-            display: flex;
-            place-items: center;
-        }
-
-        .commonCountry p {
-            font-size: 12px;
-            font-weight: 600;
-        }
-
-        .commonCountry .allBoxes {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .commonCountry .allBoxes .box button {
-            padding: 5px 15px;
-            border-radius: 2.5px;
-            cursor: pointer;
-            border: none;
-            background: #444444;
-            color: #D9D9D9;
-            font-weight: 600;
-            transition: .3s ease-in;
-            font-size: 12px;
-        }
-    }
-
+    
     /* .searchView {
         display: flex;
         justify-content: center;
