@@ -22,7 +22,66 @@ export default {
 </script>
 
 <style scoped>
-  main {
+  @media (max-width: 480px) {
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .intro-section {
+      order: 1;
+    }
+
+    .image-section {
+      display: flex;
+      justify-content: center;
+      order: 0;
+      height: 50vh;
+      margin: 5rem 0;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .intro-section span {
+      color: #027EE7;
+    }
+
+    .intro-section h1 {
+      margin: 2.5rem 2rem;
+      font-size: 24px;
+    }
+
+    .intro-section h2 {
+      margin: 1.5rem 2rem;
+      font-size: 20px;
+    }
+
+    .intro-section p {
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0 2rem;
+      letter-spacing: 1px;
+    }
+
+    .intro-section button {
+      margin: 2rem;
+      padding: .5rem 2.5rem;
+      letter-spacing: 1px;
+      font-weight: bold;
+      color: #fff;
+      background: #027EE7;
+      outline: none;
+      border-radius: 2.5px;
+      border: none;
+    }
+}
+
+
+
+  /* main {
     display: flex;
     justify-content: space-between;
     place-items: center;
@@ -32,10 +91,6 @@ export default {
 
   .intro-section {
     width: 50%;
-  }
-
-  .intro-section span {
-    color: #027EE7;
   }
 
   .intro-section h1 {
@@ -82,5 +137,5 @@ export default {
     width: 50%;
     display: flex;
     justify-content: center;
-  }
+  } */
 </style>

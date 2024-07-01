@@ -13,13 +13,34 @@
 
 
 <style scoped>
+  @media (max-width: 480px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      place-items: center;
+      padding: 10px;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+
+    .sendInfo button i{
+      font-size: 16px;
+    }
+  }
+
   nav {
+    background-color: #222222;
+  }
+
+  /* nav {
     display: flex;
     justify-content: space-between;
     place-items: center;
     padding: 15px 70px;
     background-color: #222222;
-  }
+  } */
 
   h2 {
     font-weight: bold;
