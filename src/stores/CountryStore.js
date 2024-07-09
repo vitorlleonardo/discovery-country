@@ -16,8 +16,10 @@ export const useCountryStore = defineStore('country', {
         if (!response.ok) {
           throw new Error(`Network response was not ok: ${response.status}`);
         }
-        const data = await response.json();
-        this.countryData = data[0];
+        if (response.status === 200) {
+          const data = await response.json();
+          this.countryData = data[0];
+        }
       } catch (error) {
         console.error('There was a problem', error);
       }
